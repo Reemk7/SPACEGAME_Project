@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-image: url(bg2.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px; /* Remove left and right margins to span the whole screen width */
+}
+h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #1269a7;
+    color: #de63d6;
+}
+h2 {
+    text-align: left; /* Align h2 to the left */
+    width: 100%; /* Make h2 span the whole width */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-weight: 800;
+    color: #7c0670;
+    text-shadow: -1px -1px 0 #de63d6, 1px -1px 0 #de63d6, -1px 1px 0 #de63d6, 1px 1px 0 #de63d6;
+    background: linear-gradient(to left, rgba(238, 128, 231, 0.7), rgba(241, 177, 236, 0.7), rgba(246, 219, 246, 0.7));
+}
+
+h3 {
+    text-align: left; /* Align h2 to the left */
+    width: 100%; /* Make h2 span the whole width */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-weight: 800;
+    color: #7c0670;
+       
+}
+h2 i {
+    color: #5c0a59;
+    text-shadow: -1px -1px 0 #0689a0, 1px -1px 0 #0689a0, -1px 1px 0 #0689a0, 1px 1px 0 #0689a0;
+}
+p {
+    text-align: left; /* Align p to the left */
+    width: 100%; /* Make p span the whole width */
+    font-size: 18px;
+    line-height: 1.5em;
+    color: rgb(236, 220, 241);
+}
+
+p i, h3 i {
+    color: #0689a0;
+}
+
+.section {
+    display: flex; /* Create a flex container */
+    align-items: center;
+    width: 100%; /* Full width of the screen */
+}
+img {
+    width: 10%; /* Take up 25% of the width */
+    
+}
+.content {
+    width: 75%; /* Take up 75% of the width */
+    margin-left: 20px; /* Add margin between the image and text */
+    font-size: 18px;
+    line-height: 1.5em;
+    color: rgb(236, 220, 241);
+}
+

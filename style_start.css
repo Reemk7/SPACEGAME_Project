@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+    }
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    margin: 0px; 
+    /*background: rgb(172, 233, 243);*/
+    background-image: linear-gradient(rgb(86, 86, 131),rgb(172, 233, 25243));
+    position: relative;
+  }
+#banner{
+width: 100%;
+height: 650px;
+margin: 0px auto;
+background: "bg2.jpg" repeat-x;
+animation: animate-background linear 15s infinite;
+
+  }
+nav{
+    width: 100%;
+    position:relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2vw 6vw;
+    z-index: 100%;
+    background: rgb(71, 6, 146);
+    height: 110px;
+  }
+  .logo {
+    font-size: 3vw;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .MenuItems {
+    display: flex;
+    margin: auto 0;
+  }
+  .MenuItems li {
+    list-style: none;
+    margin: 0 1.5vw;
+  }
+  .MenuItems a {
+    display: block;
+    color: #fff;
+    font-size: 1.2vw;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .MenuItems li:hover a {
+    color: rgb(220, 180, 240);
+    font-size:large;
+  }
+  .Welcome{
+    background-image: url("bg2.jpg");
+    animation: backgroundScroll linear 15s infinite;
+    display: flex;
+    width: 100%;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+}
+.TextContainer {
+    width: 50%;
+    padding-left: 5rem;
+    padding-top: 2.5rem;
+    color: #fff;
+  }
+  .TextContainer h2 {
+    font-size: 10vw;
+    font-weight: 900;
+    line-height: 10vw;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  .TextContainer h2::first-line {
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 0 5px 10 px rgba(255, 255, 255, 0.06);
+  }
+  .TextContainer h3 {
+    color: #fff;
+    font-size: 2.5vw;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: -70px; 
+}
+
+.TextContainer h5 {
+    color: #fff;
+    font-size: 0.95vw;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 0px; 
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+  .TextContainer p {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #f2f2f2;
+    margin-top: 50px;
+  }
+  .TextContainer {
+    text-align: center; /* Center-align the content horizontally */
+}
+
+button {
+    display: inline-block;
+    color: #fef2f2;
+    background: #fff;
+    font: 1.5vw;
+    margin-top: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 8px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    --background-color: rgb(103, 24, 195);
+    --background-color-dark: rgb(42, 5, 87);
+    font-family: 'Boogaloo', cursive;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--background-color);
+    box-shadow: 6px 6px 0 var(--background-color-dark);
+}
+
+
+button:hover {
+   letter-spacing: 3px;
+   padding: 6px 18px;
+  }
+button:active{
+    transform:translateX(2px) translateY(2px);
+    box-shadow: 4px 4px 0 var(--background-color-dark);
+  }
+  .ImageContainer {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+  .ImageBox {
+    position: relative;
+  }
+  .ImageBox img {
+    object-fit: cover;
+  }
+/* Game title design */
+*,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --color-primary: #f9f4f4;
+    --color-secondary: #dcd4d3;
+    --color-tertiary: #7d04a1;
+    --color-quaternary: #ff06ee;
+    --color-quinary: #121111;
+  }
+  .content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .text-shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+      9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: var(--color-primary);
+    animation: shadows 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+  }
+  
+  @keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+    10% {
+      transform: translate(-3px, -3px);
+      text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {
+      transform: translate(-6px, -6px);
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    30% {
+      transform: translate(-9px, -9px);
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    40% {
+      transform: translate(-12px, -12px);
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    50% {
+      transform: translate(-12px, -12px);
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    60% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    70% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    80% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    90% {
+      text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  

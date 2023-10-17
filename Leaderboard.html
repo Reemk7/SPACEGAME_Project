@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style.css' rel='stylesheet'>
+		<script src='script.js'></script>
+		<script>
+			window.playername = '{{username}}' || localStorage.getItem('playername');
+		</script>
+</head>
+<body onload='getLeaders()'>
+    <h1>Leader Board</h1>
+		<div class='center' id='leaders'>
+		</div>
+        <div id="container">
+        </div>
+            
+
+		<div class="middle">
+				<!--Link to the game-->
+				<a href="Game.html">
+					<button id="play">Play</button>
+				</a>
+	
+				<!--Link to the instructions-->
+				<a href="Instructions.html">
+					<button>Instructions</button>
+				</a>
+	
+				<!--Link to the leaderboard-->
+				<a href="index.html">
+					<button>Home</button>
+				</a>
+			</div>
+    
+</body>
+</html>

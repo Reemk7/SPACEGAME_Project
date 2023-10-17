@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPACE GAME</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/eb0bceba1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_start.css" />
+    <script>
+        window.playername = '{{username}}' || localStorage.getItem('playername');
+    </script>
+    <script src='script.js'></script>
+  </head>
+  <body onload='load()'>
+    <header>
+        <nav>
+          <div class="logo">SPACE GAME</div>
+          <ol class="MenuItems">
+            <li><a href="#">Home <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="Instructions.html">Instructions <i class="fa-solid fa-list"></i></a></li>
+            <li><a href="Leaderboard.html">Leaderboard <i class="fa-solid fa-trophy"></i></a></li>
+            <li><a href="News.html">News <i class="fa-solid fa-newspaper"></i></a></li>
+            <li><a href="#">More</a></li>
+          </ol>
+        </nav>
+      </header>
+      <main>
+        <section class="Welcome">
+            <div class="TextContainer">
+                <h3>Welcome To</h3>
+                <div class="content">
+                    <h2 class="text-shadows">SPACE<br>GAME</h2>
+                </div>
+                <h5>Online Game | By Reem Kanaan, Saadeddine Dakdouki and Celine Kassem</h5>
+                <div class="center">
+                    <input type="text" id="name" placeholder='Enter name here (max. 10 characters)'>        
+                </div>
+                <div class="middle">
+                    <button onclick='play()'>Play</button>
+                </div>
+            </div>
+            <div class="ImageContainer">
+                <div class="ImageBox">
+                  <img src="Planet.png" alt="user pic" />
+                </div>
+            </div>
+        </section>
+      </main>
+</body>
+  
+
