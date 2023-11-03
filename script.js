@@ -28,6 +28,13 @@ const createRow  = (UserObject) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    const container = document.querySelector('#container')
+
+    if (!container) {
+        return;
+    }
+
     let elements = [{
         name : "Reem",
         score: 123,
@@ -53,7 +60,6 @@ score : localScore
 
 elements.sort((a, b) => b.score - a.score)
 
-let container = document.querySelector('#container')
 container.innerHTML = "";
 elements.forEach((el) => {
     container.appendChild(createRow(el))
@@ -610,4 +616,3 @@ elements.forEach((el) => {
     }
     animate(0);
 });
-
